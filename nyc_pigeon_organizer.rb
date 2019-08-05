@@ -27,8 +27,11 @@ require 'pry'
 
 def pigeon_list(pigeon_data)
   list = {}
-  pigeon_data[:color].collect do |option|
-    
+  pigeon_data.collect do |attribute|
+    binding.pry
+    attribute.collect do |option|
+      
+    end 
   end 
   list
 end
