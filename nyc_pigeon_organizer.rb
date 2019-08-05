@@ -23,6 +23,14 @@ def nyc_pigeon_organizer(pigeon_data)
     end
   end 
   
+  pigeon_data[:gender].collect do |option, names_arr|
+    names_arr.collect do |name|
+      if list_names.include?(name)
+        list[name][:gender] << option.to_s
+      end 
+    end 
+  end
+  
 #   if list.keys.include?(name) 
 #   list[name][:color] << option.to_s
 # end 
