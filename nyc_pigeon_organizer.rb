@@ -10,8 +10,8 @@ def nyc_pigeon_organizer(pigeon_data)
       names_arr.collect do |name|
         list[name] = {}
         list[name][attribute] = []
-      end 
-    end 
+      end
+    end
   end 
   list
 end
