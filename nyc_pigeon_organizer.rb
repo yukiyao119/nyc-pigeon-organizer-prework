@@ -7,7 +7,8 @@ def nyc_pigeon_organizer(pigeon_data)
     attribute_details.collect do |option, names_arr|
       # binding.pry
       names_arr.collect do |name|
-        list[name] = {attribute => [option.to_s]}
+        list[name] = {}
+        list[name][attribute] = [option.to_s]
       end 
     end 
   end 
