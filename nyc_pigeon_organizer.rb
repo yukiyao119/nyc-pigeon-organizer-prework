@@ -1,30 +1,5 @@
 require 'pry'
 
-# def nyc_pigeon_organizer(data)
-#   # write your code here!
-#   list = {}
-#   data.keys.collect do |attribute|
-#     # binding.pry
-#     # attribute = :color [:color, :gender, :lives]
-#     data[attribute].keys.collect do |option|
-#       # binding.pry
-#       # option = :purple [:purple, :grey, :white, :brown]
-#       data[attribute][option].collect do |name|
-#         # binding.pry
-#         # name = "theo" ["Theo", "Peter Jr.", "Ms. K"]
-#         if list.keys.include?(name) == false   # if "theo" name not existed 
-#           list[name] = {attribute => [option.to_s]}
-#         else 
-#         # list[name].keys.include?(attribute) == false   # if "theo" name already existed
-#           list[name][attribute] = []
-#           list[name][attribute] << option.to_s
-#         end
-#       end
-#     end
-#   end
-#   list
-# end
-
 def pigeon_list(pigeon_data)
   list = {}
   pigeon_data.collect do |attribute, attribute_details|
@@ -32,7 +7,11 @@ def pigeon_list(pigeon_data)
     attribute_details.collect do |option, names_arr|
       binding.pry
       names_arr.collect do |name|
-        
+        if list.keys.include?(name) == false     # if name "theo" not existed
+          list[name] = {attribute => [option.to_s]}
+        else     # if name "theo" existed
+          list[name][attribute] << option.to_s
+        end
       end 
     end 
   end 
