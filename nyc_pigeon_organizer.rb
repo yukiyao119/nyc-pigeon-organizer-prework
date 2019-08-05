@@ -16,7 +16,8 @@ def nyc_pigeon_organizer(pigeon_data)
     end
   end 
   
-  pigeon_data[:color]
+  list_names = list.keys 
+  pigeon_data[:color].
   
   
 #   if list.keys.include?(name) 
