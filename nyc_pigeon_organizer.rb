@@ -3,7 +3,6 @@ require 'pry'
 def nyc_pigeon_organizer(pigeon_data)
   list = {}
   pigeon_data.collect do |attribute, attribute_details|
-    attribute_details.keys.to_s
     # binding.pry
     attribute_details.collect do |option, names_arr|
       # binding.pry
@@ -13,6 +12,9 @@ def nyc_pigeon_organizer(pigeon_data)
           :gender => [],
           :lives => []
         }     # question here, I originally wrote list[name] = {attribute => []}
+        
+        
+        list[name][:color] << option.to_s
       end
     end
   end 
