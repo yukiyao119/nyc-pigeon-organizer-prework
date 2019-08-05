@@ -8,7 +8,8 @@ def nyc_pigeon_organizer(pigeon_data)
       # binding.pry
       names_arr.collect do |name|
         if list.keys.include?(name) == false     # if name "theo" not existed
-          list[name] = {attribute => [option.to_s]}
+          list[name] = {}
+          list[name][attribute] = []
         else     # if name "theo" existed
           list[name][attribute] << option.to_s
         end
