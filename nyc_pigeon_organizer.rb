@@ -27,10 +27,13 @@ require 'pry'
 
 def pigeon_list(pigeon_data)
   list = {}
-  pigeon_data.collect do |attribute|
+  pigeon_data.collect do |attribute, attribute_details|
     binding.pry
-    attribute.collect do |option|
-      
+    attribute_details.collect do |option, names_arr|
+      binding.pry
+      names_arr.collect do |name|
+        
+      end 
     end 
   end 
   list
