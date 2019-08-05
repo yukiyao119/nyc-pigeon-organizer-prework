@@ -3,12 +3,10 @@ require 'pry'
 def nyc_pigeon_organizer(pigeon_data)
   list = {}
   pigeon_data.collect do |attribute, attribute_details|
+    attribute_details.keys.to_s
     # binding.pry
     attribute_details.collect do |option, names_arr|
       # binding.pry
-      if option.class == Symbol
-        option = option.to_s
-      end
       names_arr.collect do |name|
         list[name] = {}
         list[name][attribute] = []
