@@ -10,8 +10,9 @@ def nyc_pigeon_organizer(pigeon_data)
         if list.keys.include?(name) == false     # if name "theo" not existed
           list[name] = {}
           list[name][attribute] = [option.to_s]
-        else     # if name "theo" existed
-          list[name][attribute] = [option.to_s]
+        end 
+        if list[name].keys.include?(attribute) # if name "theo" existed, attribute :color existed too
+          list[name][attribute] << option.to_s
         end
       end 
     end 
