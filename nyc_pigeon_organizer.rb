@@ -12,12 +12,17 @@ def nyc_pigeon_organizer(pigeon_data)
           :gender => [],
           :lives => []
         }     # question here, I originally wrote list[name] = {attribute => []}
-        
-        
-        list[name][:color] << option.to_s
       end
     end
   end 
+  
+  pigeon_data[:color]
+  
+  
+#   if list.keys.include?(name) 
+#   list[name][:color] << option.to_s
+# end 
+# list[name][:color] << option.to_s
   list
 end
 
