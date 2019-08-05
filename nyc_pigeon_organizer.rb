@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(pigeon_data)
           list[name] = {}
           list[name][attribute] = [option.to_s]
         else     # if name "theo" existed
-          list[name][attribute] = option.to_s
+          list[name][attribute] = [option.to_s]
         end
       end 
     end 
