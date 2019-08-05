@@ -6,6 +6,9 @@ def nyc_pigeon_organizer(pigeon_data)
     # binding.pry
     attribute_details.collect do |option, names_arr|
       # binding.pry
+      if option.class == Symbol
+        option = option.to_s
+      end 
       names_arr.collect do |name|
         list[name] = {}
         list[name][attribute] = [option.to_s]
