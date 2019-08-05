@@ -3,9 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(pigeon_data)
   list = {}
   pigeon_data.collect do |attribute, attribute_details|
-    # binding.pry
     attribute_details.collect do |option, names_arr|
-      # binding.pry
       names_arr.collect do |name|
         list[name] = {
           :color => [],
@@ -17,8 +15,11 @@ def nyc_pigeon_organizer(pigeon_data)
   end 
   
   list_names = list.keys 
-  pigeon_data[:color].
-  
+  pigeon_data[:color].collect do |option, names_arr|
+    names_arr.collect do |name|
+      
+    end
+  end 
   
 #   if list.keys.include?(name) 
 #   list[name][:color] << option.to_s
