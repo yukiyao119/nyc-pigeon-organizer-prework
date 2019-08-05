@@ -7,13 +7,7 @@ def nyc_pigeon_organizer(pigeon_data)
     attribute_details.collect do |option, names_arr|
       # binding.pry
       names_arr.collect do |name|
-        # if list[name].keys.include?(attribute) == false     # if name "theo" not existed
-          list[name] = {attribute = [option.to_s]}
-        #   list[name][attribute] = [option.to_s]
-        # end 
-        # if list[name].keys.include?(attribute)   # if name "theo" existed, attribute :color existed too
-        #   list[name][attribute] << option.to_s
-        # end
+        list[name] = {attribute => [option.to_s]}
       end 
     end 
   end 
