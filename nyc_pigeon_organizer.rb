@@ -18,6 +18,8 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data[:color].collect do |option, names_arr|
     names_arr.collect do |name|
       if list_names.include?(name)
+        list[name][:color] << option.to_s
+      end
     end
   end 
   
