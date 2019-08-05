@@ -1,6 +1,6 @@
 require 'pry'
 
-def pigeon_list(pigeon_data)
+def nyc_pigeon_organizer(pigeon_data)
   list = {}
   pigeon_data.collect do |attribute, attribute_details|
     # binding.pry
