@@ -3,9 +3,9 @@ require 'pry'
 def pigeon_list(pigeon_data)
   list = {}
   pigeon_data.collect do |attribute, attribute_details|
-    binding.pry
+    # binding.pry
     attribute_details.collect do |option, names_arr|
-      binding.pry
+      # binding.pry
       names_arr.collect do |name|
         if list.keys.include?(name) == false     # if name "theo" not existed
           list[name] = {attribute => [option.to_s]}
