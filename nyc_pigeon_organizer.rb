@@ -8,10 +8,10 @@ def nyc_pigeon_organizer(pigeon_data)
       # binding.pry
       if option.class == Symbol
         option = option.to_s
-      end 
+      end
       names_arr.collect do |name|
         list[name] = {}
-        list[name][attribute] = [option.to_s]
+        list[name][attribute] = [option]
       end 
     end 
   end 
