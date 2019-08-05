@@ -30,12 +30,7 @@ def nyc_pigeon_organizer(pigeon_data)
       end 
     end 
   end
-  
-#   if list.keys.include?(name) 
-#   list[name][:color] << option.to_s
-# end 
-# list[name][:color] << option.to_s
-  list
+
 end
 
 # pigeon_data = {
