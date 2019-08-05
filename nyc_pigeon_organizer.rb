@@ -10,8 +10,8 @@ def nyc_pigeon_organizer(pigeon_data)
         option = option.to_s
       end
       names_arr.collect do |name|
-        list[name] = {attribute => []}
-        list[name][attribute] << option
+        list[name] = {}
+        list[name][attribute] = []
       end 
     end 
   end 
