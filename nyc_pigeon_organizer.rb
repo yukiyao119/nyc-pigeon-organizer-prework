@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(pigeon_data)
   list_names = list.keys 
   pigeon_data[:color].collect do |option, names_arr|
     names_arr.collect do |name|
-      
+      if list_names.include?(name)
     end
   end 
   
