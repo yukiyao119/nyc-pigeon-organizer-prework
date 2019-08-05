@@ -8,7 +8,11 @@ def nyc_pigeon_organizer(pigeon_data)
     attribute_details.collect do |option, names_arr|
       # binding.pry
       names_arr.collect do |name|
-        list[name] = {:color => []}
+        list[name] = {
+          :color => [],
+          :gender => [],
+          :lives => []
+        }     # question here, I originally wrote list[name] = {attribute => []}
       end
     end
   end 
